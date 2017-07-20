@@ -24,3 +24,7 @@
     mv Node.gitignore .gitignore
     git add .gitignore 
 
+## add modules
+
+    npm i -D  postcss-loader
+    npm i -D  postcss-filter
