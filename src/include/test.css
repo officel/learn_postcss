@@ -1,8 +1,9 @@
 /* custom properties */
 :root {
 --fontSize: 1rem;
---mainColor: #12345678;
+--mainColor: #222222;
 --highlightColor: hwb(190, 35%, 20%);
+--mainValiable: #000;
 }
 
 /* custom properties set & @apply rule */
@@ -23,11 +24,11 @@
 
 /* some var() & calc() */
 body {
-color: var(--mainColor);
+  color: var(--mainColor);
 
-font-size: var(--fontSize);
-line-height: calc(var(--fontSize) * 1.5);
-padding: calc((var(--fontSize) / 2) + 1px);
+  font-size: var(--fontSize);
+  line-height: calc(var(--fontSize) * 1.5);
+  padding: calc((var(--fontSize) / 2) + 1px);
 }
 
 /* custom media query usage */

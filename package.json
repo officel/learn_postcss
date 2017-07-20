@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "postcss src/**/*.css -d out",
-    "watch-css": "postcss src/**/*.css -d out -w -m"
+    "build-css": "postcss \"src/css/**/*.css\" -b -d out ",
+    "watch-css": "postcss \"src/css/**/*.css\" -b -d out -w -m"
   },
   "author": "",
   "license": "ISC",

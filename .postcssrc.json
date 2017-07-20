@@ -2,6 +2,7 @@
   "parser": false,
   "map": false,
   "plugins": {
+    "postcss-import": {},
     "postcss-cssnext": {}
   }
 }
