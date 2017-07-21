@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "postcss src/**/*.css -d out",
-    "watch-css": "postcss src/**/*.css -d out -w -m"
+    "build-css-prod": "postcss src/**/*.css -d out -u cssnano --no-map",
+    "build-css": "postcss \"src/**/*.css\" -d out",
+    "watch-css": "postcss \"src/**/*.css\" -d out -w"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,7 @@
   },
   "private": true,
   "devDependencies": {
+    "cssnano": "^3.10.0",
     "postcss-cli": "^4.1.0",
     "postcss-filter": "0.0.2",
     "postcss-import": "^10.0.0",

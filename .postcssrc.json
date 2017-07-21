@@ -1,6 +1,6 @@
 {
   "parser": false,
-  "map": false,
+  "map": { "inline": false },
   "plugins": {
     "postcss-cssnext": {}
   }
