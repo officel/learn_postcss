@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css-prod": "postcss src/**/*.css -d out -u cssnano --no-map",
-    "build-css": "postcss \"src/**/*.css\" -d out",
-    "watch-css": "postcss \"src/**/*.css\" -d out -w"
+    "build-css": "postcss \"src/**/*.css\" -d out --fix",
+    "watch-css": "postcss \"src/**/*.css\" -d out -w",
+    "reformat-css": "stylefmt -r \"src/**/*.css\" "
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +23,7 @@
     "postcss-filter": "0.0.2",
     "postcss-import": "^10.0.0",
     "postcss-loader": "^2.0.6",
+    "stylefmt": "^6.0.0",
     "stylelint": "^8.0.0",
     "stylelint-config-standard": "^17.0.0"
   }

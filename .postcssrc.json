@@ -2,6 +2,8 @@
   "parser": false,
   "map": { "inline": false },
   "plugins": {
+    "stylelint": {},
+    "stylefmt": { "fix": true },
     "postcss-cssnext": {}
   }
 }
