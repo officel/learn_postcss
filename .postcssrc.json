@@ -4,6 +4,7 @@
   "plugins": {
     "stylelint": {},
     "stylefmt": { "fix": true },
+    "postcss-import": {},
     "postcss-cssnext": {}
   }
 }
