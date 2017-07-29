@@ -5,19 +5,6 @@
   --highlightColor: hwb(190, 35%, 20%);
 }
 
-/* custom properties set & @apply rule */
-:root {
-  --centered: {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  };
-}
-
-.centered {
-  @apply --centered;
-}
-
 /* custom media queries */
 @custom-media --viewport-medium (width <= 50rem);
 
