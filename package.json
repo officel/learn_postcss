@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rimraf out",
+    "clean":      "rimraf out",
+    "clean-prod": "rimraf dist",
 
-    "build":      "npm run clean && npm run build-css",
-    "build-prod": "npm run clean && npm run build-css-prod",
+    "build":      "npm run clean      && npm run build-css",
+    "build-prod": "npm run clean-prod && npm run build-css-prod",
 
     "build-css":      "postcss \"src/**/*.css\" -d out",
-    "build-css-prod": "postcss \"src/**/*.css\" -d out -u cssnano --no-map",
+    "build-css-prod": "postcss \"src/**/*.css\" -d dist",
 
     "watch-css": "postcss \"src/**/*.css\" -d out -w",
     "reformat-css": "stylefmt -r \"src/**/*.css\" "

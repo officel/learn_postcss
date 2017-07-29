@@ -1,0 +1,12 @@
+{
+  "parser": false,
+  "map": { "inline": false },
+  "plugins": {
+    "stylelint": {},
+    "stylefmt": { "fix": true },
+    "postcss-easy-import": {
+      "extensions": [".css", ".pcss", ".scss"]
+    },
+    "postcss-cssnext": {}
+  }
+}
