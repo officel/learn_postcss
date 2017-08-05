@@ -15,7 +15,7 @@
     "build-css-prod": "postcss \"src/**/*.css\" -d dist",
 
     "watch-css": "postcss \"src/**/*.css\" -d out -w",
-    "reformat-css": "stylefmt -r \"src/**/*.css\" "
+    "reformat-css": "stylefmt -c \"./.stylefmtrc\" -r \"src/**/*\" "
   },
   "author": "Office L",
   "license": "MIT",
