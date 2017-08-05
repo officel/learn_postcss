@@ -3,10 +3,11 @@
   "map": { "inline": false },
   "plugins": {
     "stylelint": {},
-    "stylefmt": { "fix": true },
     "postcss-easy-import": {
       "extensions": [".css", ".pcss", ".scss"]
     },
-    "postcss-cssnext": {}
+    "postcss-merge-rules": {},
+    "postcss-cssnext": {},
+    "postcss-reporter": {"clearReportedMessages": true }
   }
 }
